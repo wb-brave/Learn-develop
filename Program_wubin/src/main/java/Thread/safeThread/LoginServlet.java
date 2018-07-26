@@ -3,7 +3,7 @@ package Thread.safeThread;
 public class LoginServlet {
     private static String name;
     private static String password;
-    synchronized public static void doPost(String name1, String password1){
+     public static void doPost(String name1, String password1){
 
         try{
             name = name1;

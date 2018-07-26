@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--suppress ALL -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="TestA" class="cn.wb.spring.first.sample.circleDepended.TestA">
+        <!--<constructor-arg index="0" ref="TestB"/>-->
+        <property name="TestB" ref="TestB"/>
+    </bean>
+
+    <bean id="TestB" class="cn.wb.spring.first.sample.circleDepended.TestB">
+        <!--<constructor-arg index="0" ref="TestC"/>-->
+        <property name="TestC" ref="TestC"/>
+    </bean>
+
+    <bean id="TestC" class="cn.wb.spring.first.sample.circleDepended.TestC">
+        <!--<constructor-arg index="0" ref="TestA"/>-->
+        <property name="TestA" ref="TestA"/>
+    </bean>
+
+</beans>

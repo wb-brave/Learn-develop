@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--suppress ALL -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="GetBeanTest" class="cn.wb.spring.first.sample.lookUp.GetBeanTest">
+        <lookup-method name="getBean" bean="Teacher"/>
+    </bean>
+
+    <bean id="Teacher" class="cn.wb.spring.first.sample.lookUp.Teacher">
+
+    </bean>
+
+    <bean id="TestChangeMethod" class="cn.wb.spring.first.sample.replaceMethod.TestChangeMethod">
+        <replaced-method name="changeMe" replacer="Changed"/>
+    </bean>
+
+    <bean id="Changed" class="cn.wb.spring.first.sample.replaceMethod.Changed"></bean>
+
+</beans>

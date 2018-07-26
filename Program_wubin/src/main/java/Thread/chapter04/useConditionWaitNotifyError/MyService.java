@@ -1,0 +1,19 @@
+package Thread.chapter04.useConditionWaitNotifyError;
+
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
+public class MyService {
+    private Lock lock = new ReentrantLock();
+    private Condition condition = lock.newCondition();
+    public void aWait(){
+        try {
+            condition.await();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+}

@@ -25,9 +25,9 @@ public class BlogNote{
             i5++;
             l2.add(i5);
         }while (i<3);
-        int m = (int)l1.get(4)&3;
+        int m = 6^2;
         int m1 = (int)l1.get(4)>>1;
-        System.out.println(m + " " + m1 + " " +l1.size());
+        System.out.println(m + " m " + m1 + " " +l1.size());
         l1.add(4,12);
         int[] i2 = {1,2,3,4,5,6,7};
         System.arraycopy(i2,2,i2,3,4);
