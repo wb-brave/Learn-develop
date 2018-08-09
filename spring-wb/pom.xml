@@ -190,4 +190,19 @@
             <version>${activemq.version}</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <!--通过maven的插件将整个项目的编译器设置成1.8-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
