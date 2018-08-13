@@ -1,4 +1,4 @@
-package cn.wb.spring.first.cn.wb.spring.version4.first;
+package cn.wb.spring.first.version4.first;
 
 import cn.wb.spring.first.springmvc.sample.entity.User;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

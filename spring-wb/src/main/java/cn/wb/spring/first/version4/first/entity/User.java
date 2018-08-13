@@ -1,4 +1,4 @@
-package cn.wb.spring.first.cn.wb.spring.version4.first.entity;
+package cn.wb.spring.first.version4.first.entity;
 
 /**
  * @author wubin

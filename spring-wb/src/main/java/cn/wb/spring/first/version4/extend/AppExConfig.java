@@ -1,10 +1,9 @@
-package cn.wb.spring.first.cn.wb.spring.version4.first;
+package cn.wb.spring.first.version4.extend;
 
-import cn.wb.spring.first.cn.wb.spring.version4.first.entity.User;
+import cn.wb.spring.first.version4.first.entity.User;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.FilterType;
 
 /**
  * @author wubin
@@ -15,10 +14,11 @@ import org.springframework.context.annotation.FilterType;
  * @date 2018/08/09
  */
 @Configuration
-@ComponentScan(excludeFilters = {@ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE,value = User.class)})
-public class AppConfig {
-    @Bean(name = "user")
-    public User createUser(){
+//@ComponentScan(excludeFilters = {@ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE,value = User.class)})
+@ComponentScan
+public class AppExConfig {
+    @Bean(name = "user1")
+    public User getUser(){
         return new User();
     }
 }
