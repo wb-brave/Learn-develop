@@ -6,7 +6,8 @@
 @Setter/@Getter : 自动生成set和get方法 
 @ToString : 自动生成toString方法 
 @EqualsAndHashcode : 从对象的字段中生成hashCode和equals的实现 
-@NoArgsConstructor/@RequiredArgsConstructor/@AllArgsConstructor 
+@NoArgsConstructor/@RequiredArgsConstructor/@AllArgsConstructor
+使用 @RequiredArgsConstructor 需要在你所需的字段上加上注解@NonNUll
 自动生成构造方法 
 @Data : 自动生成set/get方法，toString方法，equals方法，hashCode方法，不带参数的构造方法 
 @Value : 用于注解final类 
