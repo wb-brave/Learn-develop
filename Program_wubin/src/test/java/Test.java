@@ -1,11 +1,8 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class Test {
 
-    public static void main(String[] wu){
+    public static void main(String[] wu) {
 
 //        User user = new User("w","b");
 //        User user1 = new User("w","b");
@@ -16,20 +13,23 @@ public class Test {
         String n1 = new String("123");
         String n2 = new String("123");
         System.out.println(n1.equals(n2));
-
+        Map ss = new HashMap();
+        System.out.println(ss.get("we"));
+        System.out.println(ss.get(null));
     }
 
 }
 
-class User{
+class User {
     private String name;
     private String pass;
 
-    public User(String name,String pass){
+    public User(String name, String pass) {
 
         this.name = name;
         this.pass = pass;
     }
+
     public void setName(String name) {
         this.name = name;
     }
