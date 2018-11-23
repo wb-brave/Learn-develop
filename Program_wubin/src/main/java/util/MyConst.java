@@ -23,4 +23,6 @@ public final class MyConst {
          */
         public static final String FILEPATH_DESKTOP = "/Users/wufan/Desktop/";
     }
+
+    public static final String FILEEXT_JAVA = ".java";
 }

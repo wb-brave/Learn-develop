@@ -2,7 +2,7 @@ package thinkinjava.chapter19.enums.autosentmachine;
 
 
 import thinkinjava.chapter18.util.TextFile;
-import util.Generator;
+import util.generator.Generator;
 
 import java.util.EnumMap;
 import java.util.Iterator;

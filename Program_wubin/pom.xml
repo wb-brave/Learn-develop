@@ -62,6 +62,12 @@
             <artifactId>xom</artifactId>
             <version>1.2.5</version>
         </dependency>
+        <!--解析xml-->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-digester3</artifactId>
+            <version>3.2</version>
+        </dependency>
     </dependencies>
 
     <build>

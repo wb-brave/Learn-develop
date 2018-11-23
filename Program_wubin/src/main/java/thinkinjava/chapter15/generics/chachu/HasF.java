@@ -1,22 +1,20 @@
-package util;
-
-import java.util.Collection;
+package thinkinjava.chapter15.generics.chachu;
 
 /**
  * @author wubin
  * @Description
- *
- * 生成器（一般只定义一个方法）
- * 该方法用来产生新的对象
  * @project Learn-develop
- * @package util
+ * @package thinkinjava.chapter15.generics.chachu
  * @email wubin326@qq.com
- * @date 2018/10/25
+ * @date 2018/11/19
  * Modification History:
  * Date              Author           Version              Description
  * ----------------------------------------------------------------------
- * 2018/10/25        wubin            0.0.1
+ * 2018/11/19        wubin            0.0.1
  */
-public interface Generator<T> {
-    T next();
+public class HasF {
+
+    public void f(){
+        System.out.println("HasF.f()");
+    }
 }
