@@ -61,7 +61,7 @@ public class LocalinnerClass {
 
                 @Override
                 public int next() {
-                    System.out.println(name);
+                    System.out.println(name.toUpperCase());
                     return count++;
                 }
             };
