@@ -13,4 +13,14 @@ public class SortAllTest {
         SortAll.quickSort(SortAll.a,0,SortAll.a.length-1);
         System.out.println(Arrays.toString(SortAll.a));
     }
+
+    @Test
+    public void testArth(){
+        int i=0,j=0;
+        // assertEquals(++i,j++);
+        System.out.println(++i);
+        System.out.println(i);
+        System.out.println(j++);
+        System.out.println(j);
+    }
 }

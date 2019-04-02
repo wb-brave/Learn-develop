@@ -10,12 +10,22 @@ public class Test {
 //        List<User> list = new ArrayList<>();
 //
 //        System.out.println(user.equals(user1));
-        String n1 = new String("123");
-        String n2 = new String("123");
-        System.out.println(n1.equals(n2));
-        Map ss = new HashMap();
-        System.out.println(ss.get("we"));
-        System.out.println(ss.get(null));
+//         String n1 = new String("123");
+//         String n2 = new String("123");
+//         System.out.println(n1.equals(n2));
+//         Map ss = new HashMap();
+//         System.out.println(ss.get("we"));
+//         System.out.println(ss.get(null));
+        final int COUNT_BITS = Integer.SIZE - 3;
+        final int CAPACITY   = (1 << COUNT_BITS) - 1;
+        final int RUNNING    = -1 << COUNT_BITS;
+        final int SHUTDOWN   =  0 << COUNT_BITS;
+        final int STOP       =  1 << COUNT_BITS;
+        final int TIDYING    =  2 << COUNT_BITS;
+        final int TERMINATED =  3 << COUNT_BITS;
+        final int temp = RUNNING | 0;
+        final int temp1 = RUNNING & ~CAPACITY;
+        final int temp2 = RUNNING & CAPACITY;
     }
 
 }

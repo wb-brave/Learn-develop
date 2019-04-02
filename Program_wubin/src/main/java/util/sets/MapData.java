@@ -26,7 +26,7 @@ public class MapData<K, V> extends LinkedHashMap<K, V> {
      * @param gen
      * @param quantity
      */
-    public MapData(Generator<Pair<K, V>> gen, int quantity) {
+    private MapData(Generator<Pair<K, V>> gen, int quantity) {
         for (int i = 0; i < quantity; i++) {
             Pair<K, V> next = gen.next();
             put(next.getKey(), next.getValue());
@@ -40,7 +40,7 @@ public class MapData<K, V> extends LinkedHashMap<K, V> {
      * @param genV
      * @param quantity
      */
-    public MapData(Generator<K> genK, Generator<V> genV, int quantity) {
+    private MapData(Generator<K> genK, Generator<V> genV, int quantity) {
         for (int i = 0; i < quantity; i++) {
             put(genK.next(), genV.next());
         }
@@ -53,7 +53,7 @@ public class MapData<K, V> extends LinkedHashMap<K, V> {
      * @param value
      * @param quantity
      */
-    public MapData(Generator<K> genK, V value, int quantity) {
+    private MapData(Generator<K> genK, V value, int quantity) {
         for (int i = 0; i < quantity; i++) {
             put(genK.next(), value);
         }
@@ -65,7 +65,7 @@ public class MapData<K, V> extends LinkedHashMap<K, V> {
      * @param genK
      * @param genV
      */
-    public MapData(Iterable<K> genK, Generator<V> genV) {
+    private MapData(Iterable<K> genK, Generator<V> genV) {
 
         for (K k : genK
                 ) {
@@ -73,7 +73,7 @@ public class MapData<K, V> extends LinkedHashMap<K, V> {
         }
     }
 
-    public MapData(Iterable<K> genK, V value) {
+    private MapData(Iterable<K> genK, V value) {
 
         for (K k : genK
                 ) {

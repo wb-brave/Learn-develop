@@ -1,13 +1,9 @@
 package util;
 
-import com.sun.org.apache.bcel.internal.classfile.LocalVariableTable;
 import org.junit.Test;
-import sun.jvm.hotspot.oops.LocalVariableTableElement;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
-
-import static org.junit.Assert.*;
 
 /**
  * @author wubin

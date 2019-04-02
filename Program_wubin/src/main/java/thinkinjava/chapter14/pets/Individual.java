@@ -47,6 +47,6 @@ public class Individual implements Comparable<Individual> {
             if(secondCompare != 0)
                 return secondCompare;
         }
-        return (arg.id < id ? -1 : (arg.id == id ? 0 : 1));
+        return (Long.compare(arg.id, id));
     }
 }

@@ -18,6 +18,7 @@ public class Defaults {
      * defaults的直系子节点，以后可以添加其他的
      */
     private JavaFileInfo javaFileInfo;
+    private ExcelFileInfo excelFileInfo;
 
     public Defaults() {
     }
@@ -28,5 +29,13 @@ public class Defaults {
 
     public void setJavaFileInfo(JavaFileInfo javaFileInfo) {
         this.javaFileInfo = javaFileInfo;
+    }
+
+    public ExcelFileInfo getExcelFileInfo() {
+        return excelFileInfo;
+    }
+
+    public void setExcelFileInfo(ExcelFileInfo excelFileInfo) {
+        this.excelFileInfo = excelFileInfo;
     }
 }

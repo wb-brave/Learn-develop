@@ -42,9 +42,9 @@
         </dependency>
 
         <!--<dependency>-->
-            <!--<groupId>org.slf4j</groupId>-->
-            <!--<artifactId>slf4j-simple</artifactId>-->
-            <!--<version>${slf4j.version}</version>-->
+        <!--<groupId>org.slf4j</groupId>-->
+        <!--<artifactId>slf4j-simple</artifactId>-->
+        <!--<version>${slf4j.version}</version>-->
         <!--</dependency>-->
         <dependency>
             <groupId>ch.qos.logback</groupId>
@@ -68,6 +68,29 @@
             <artifactId>commons-digester3</artifactId>
             <version>3.2</version>
         </dependency>
+        <dependency>
+            <groupId>dom4j</groupId>
+            <artifactId>dom4j-core</artifactId>
+            <version>1.4-dev-8</version>
+        </dependency>
+
+        <!-- EXCEL 引入poi，解析workbook视图 下面俩个依赖要保持版本一致-->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>3.14</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>3.14</version>
+        </dependency>
+        <!-- 处理excel和上面功能是一样的-->
+        <!--<dependency>-->
+            <!--<groupId>net.sourceforge.jexcelapi</groupId>-->
+            <!--<artifactId>jxl</artifactId>-->
+            <!--<version>2.6.10</version>-->
+        <!--</dependency>-->
     </dependencies>
 
     <build>
@@ -76,10 +99,14 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.3.2</version>
+                <version>3.0</version>
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
+                    <!--开启获取参数名称的开关，获取也可以在编译的设置中手动添加 command参数 -paramter-->
+                    <!--<compilerArgs>-->
+                        <!--<arg>-parameters</arg>-->
+                    <!--</compilerArgs>-->
                 </configuration>
             </plugin>
         </plugins>

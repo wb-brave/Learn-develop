@@ -82,8 +82,17 @@ public class XMLHelper {
              */
             digester.addSetNext("defaults/javaFileInfo", "setJavaFileInfo", JavaFileInfo.class.getName());
             digester.addSetNext("defaults/javaFileInfo/property", "addProperty", Property.class.getName());
+
+            digester.addObjectCreate("defaults/excelFileInfo", ExcelFileInfo.class.getName());
+            digester.addSetProperties("defaults/excelFileInfo");
+            digester.addObjectCreate("defaults/excelFileInfo/property", Property.class.getName());
+            digester.addSetProperties("defaults/excelFileInfo/property");
+
+            digester.addSetNext("defaults/excelFileInfo","setExcelFileInfo", ExcelFileInfo.class.getName());
+            digester.addSetNext("defaults/excelFileInfo/property","addProperty",Property.class.getName());
             rtn = digester.parse(input);
             return rtn;
         }
     }
+
 }

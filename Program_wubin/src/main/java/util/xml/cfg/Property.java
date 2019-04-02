@@ -17,6 +17,15 @@ public class Property {
     private String value;
     private Ref ref;
     private String type;
+    private String desc;
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
 
     public Property() {
     }

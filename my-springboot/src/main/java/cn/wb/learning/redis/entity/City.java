@@ -26,4 +26,5 @@ public class City implements Serializable{
 
     @NonNull
     private String cityIntroduce;
+
 }
